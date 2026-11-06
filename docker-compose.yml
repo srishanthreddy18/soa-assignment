@@ -8,7 +8,7 @@ services:
 
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}"
+      POSTGRES_PASSWORD: "postgres123"
       POSTGRES_DB: skill_exam_2400031485
 
     ports:
@@ -46,7 +46,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgresdb:5432/skill_exam_2400031485
       SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: "${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}"
+      SPRING_DATASOURCE_PASSWORD: "postgres123"
 
     restart: unless-stopped
 
